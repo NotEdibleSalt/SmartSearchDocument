@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3366/database?useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useSSL=false
+    username: username
+    password: password
+
+  elasticsearch:
+    username: username
+    password: password
+    uris:
+      - http://127.0.0.1:9200
+
+
