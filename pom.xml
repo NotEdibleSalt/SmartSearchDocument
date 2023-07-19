@@ -102,6 +102,12 @@
       <version>1.35.0.RC</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.antherd</groupId>
+      <artifactId>sm-crypto</artifactId>
+      <version>0.3.2</version>
+    </dependency>
+
   </dependencies>
 
   <profiles>
@@ -126,6 +132,18 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
+        <configuration>
+          <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+          <prefix>git</prefix>
+          <verbose>false</verbose>
+          <dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
+          <generateGitPropertiesFile>true</generateGitPropertiesFile>
+          <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
@@ -135,6 +153,11 @@
               <artifactId>lombok</artifactId>
             </exclude>
           </excludes>
+          <image>
+            <!--suppress UnresolvedMavenProperty -->
+            <name>smart-search-document:${git.commit.id}</name>
+          </image>
+          <cleanCache>false</cleanCache>
         </configuration>
       </plugin>
     </plugins>
