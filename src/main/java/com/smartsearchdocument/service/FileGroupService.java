@@ -1,8 +1,8 @@
 package com.smartsearchdocument.service;
 
 import com.smartsearchdocument.dos.FileGroupDO;
-import com.smartsearchdocument.dto.FileGroupPagingDTO;
-import com.smartsearchdocument.dto.SaveFileGroup;
+import com.smartsearchdocument.dto.query.FileGroupPagingDTO;
+import com.smartsearchdocument.dto.command.SaveFileGroup;
 import javax.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

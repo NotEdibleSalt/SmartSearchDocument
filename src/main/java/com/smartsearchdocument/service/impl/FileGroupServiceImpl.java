@@ -3,8 +3,8 @@ package com.smartsearchdocument.service.impl;
 
 import com.smartsearchdocument.common.Ex;
 import com.smartsearchdocument.dos.FileGroupDO;
-import com.smartsearchdocument.dto.FileGroupPagingDTO;
-import com.smartsearchdocument.dto.SaveFileGroup;
+import com.smartsearchdocument.dto.query.FileGroupPagingDTO;
+import com.smartsearchdocument.dto.command.SaveFileGroup;
 import com.smartsearchdocument.repo.FileGroupRepo;
 import com.smartsearchdocument.service.FileGroupService;
 import lombok.extern.slf4j.Slf4j;

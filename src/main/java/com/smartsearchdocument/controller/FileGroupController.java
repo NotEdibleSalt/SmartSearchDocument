@@ -3,7 +3,7 @@ package com.smartsearchdocument.controller;
 
 import com.smartsearchdocument.common.Result;
 import com.smartsearchdocument.dos.FileGroupDO;
-import com.smartsearchdocument.dto.SaveFileGroup;
+import com.smartsearchdocument.dto.command.SaveFileGroup;
 import com.smartsearchdocument.service.FileGroupService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

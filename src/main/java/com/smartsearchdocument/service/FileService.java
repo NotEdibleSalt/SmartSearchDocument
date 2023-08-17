@@ -1,8 +1,8 @@
 package com.smartsearchdocument.service;
 
 import com.smartsearchdocument.dos.FileDO;
-import com.smartsearchdocument.dto.FilePagingDTO;
-import com.smartsearchdocument.dto.UploadFileDTO;
+import com.smartsearchdocument.dto.query.FilePagingDTO;
+import com.smartsearchdocument.dto.command.UploadFileDTO;
 import javax.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,18 +1,19 @@
 package com.smartsearchdocument.dos;
 
-import com.smartsearchdocument.common.DOBase;
-import java.io.Serializable;
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.springframework.data.relational.core.mapping.Table;
-
+import java.io.Serializable;
+import com.smartsearchdocument.common.DOBase;
 
 /**
  * 账户DO
  *
  * @author NotEdibleSalt
+
  */
 
 @Data
@@ -52,5 +53,6 @@ public class AccountDO extends DOBase implements Serializable {
      * 状态 ENABLE： 启用  DISABLE：禁用
      */
     private String status;
+
 
 }

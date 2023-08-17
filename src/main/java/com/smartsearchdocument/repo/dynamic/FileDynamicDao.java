@@ -2,7 +2,7 @@ package com.smartsearchdocument.repo.dynamic;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.smartsearchdocument.dos.FileDO;
-import com.smartsearchdocument.dto.FilePagingDTO;
+import com.smartsearchdocument.dto.query.FilePagingDTO;
 import com.smartsearchdocument.util.QueryUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -69,7 +69,8 @@ public class FileInfo {
         fileInfo.setFilePath(fileDO.getFilePath());
         fileInfo.setRemark(fileDO.getRemark());
         fileInfo.setContent(fileContent);
-        fileInfo.setUpdateTime(fileDO.getUpdateTime().toLocalDate());
+        fileInfo.setUpdateTime(fileDO.getUpdateTime()
+                                     .toLocalDate());
 
         return fileInfo;
     }

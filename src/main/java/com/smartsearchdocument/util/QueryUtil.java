@@ -427,14 +427,11 @@ public class QueryUtil {
 
             StackTraceElement[] stackTrace = Thread.currentThread()
                                                    .getStackTrace();
-            for (StackTraceElement e : stackTrace) {
-                System.out.println(e.getClassName() + "\t" + e.getMethodName() + "\t" + e.getLineNumber());
-            }
 
-            StackTraceElement stackTrac = stackTrace[2];
+            StackTraceElement stackTrac = stackTrace[3];
             String pos = stackTrac.getClassName() + "." + stackTrac.getMethodName() + ": " + stackTrac.getLineNumber();
 
-            log.info("{}:\\n{}", pos, this.sqlBuilder.toString());
+            log.info("{} \n{}", pos, this.sqlBuilder.toString());
 
         } catch (Exception exception) {
             log.error("打印sql失败", exception);
